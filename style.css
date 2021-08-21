@@ -1,28 +1,66 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 *{
-    margin: 10px auto;
+    margin: 5px auto;
     padding: 10px;
 }
 
+:root{
+    --primary-color:#603F83FF;
+    --blazing-yellow:#FEE715FF;
+    --background-color:#C7D3D4FF;
+}
+
 body{
+    /* font-family: 'Bebas Neue', cursive;
+    font-family: 'Rampart One', cursive; */
     font-family: 'Open Sans', sans-serif;
 }
 
+.column{
+    display: flex;
+    flex-direction: column;
+}
 .container{
+    max-height: 800px;
+    height:80%;
+    color:var(--primary-color);
+    max-width: 650px;
+    width: 80%;
+    background-color:#fff ;
     margin-top: 30px;
     text-align: center;
     justify-content: center;
     align-items: center;
+    border: 3px solid var(--primary-color);
+    border-radius: 10px;
 }
 
 button{
     width: 100px;
     border-radius: 5px;
     font-weight: bold;
+    
+    background-color: var(--primary-color);
+    color: #fff;
+    border:1px solid var(--primary-color);
+}
+
+button:hover{
+    background-color: #fff;
+    color: var(--primary-color);
+    border:1px solid var(--primary-color);
 }
 
 input{
     max-width: 250px;
     width:80%;
+    border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.output{
+    font-weight: bold;
 }
